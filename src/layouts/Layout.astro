@@ -25,7 +25,7 @@ const { title, description } = Astro.props;
   </body>
 </html>
 <style is:global>
-  @keyframes blur {
+  @keyframes header-blur {
     to {
       box-shadow:
         0 5px 50px -5px rgb(0 0 0 / 30%),
@@ -35,6 +35,11 @@ const { title, description } = Astro.props;
       backdrop-filter: blur(10px);
     }
   }
+  @keyframes nav-blur {
+    to {
+      text-shadow: none;
+    }
+  }
 
   html {
     font-family: "Onest Variable", system-ui, sans-serif;
@@ -42,8 +47,16 @@ const { title, description } = Astro.props;
     scrollbar-gutter: stable;
   }
 
-  #header-nav {
-    animation: blur linear both;
+  #top-header {
+    animation: header-blur linear both;
+  }
+
+  #header-menu a {
+    animation: nav-blur linear both;
+  }
+
+  #top-header,
+  #header-menu a {
     animation-timeline: scroll();
     animation-range: 0 200px;
   }
