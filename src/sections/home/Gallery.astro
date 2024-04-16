@@ -1,7 +1,38 @@
 ---
 import "photoswipe/style.css";
 
-const GALLERY_IMAGES = [];
+const GALLERY_IMAGES = [
+  {
+    src: "/images/gallery/img-1.webp",
+    width: 1000,
+    height: 750,
+  },
+  {
+    src: "/images/gallery/img-2.webp",
+    width: 1000,
+    height: 1498,
+  },
+  {
+    src: "/images/gallery/img-3.webp",
+    width: 1000,
+    height: 667,
+  },
+  {
+    src: "/images/gallery/img-4.webp",
+    width: 1000,
+    height: 1250,
+  },
+  {
+    src: "/images/gallery/img-5.webp",
+    width: 1000,
+    height: 667,
+  },
+  {
+    src: "/images/gallery/img-6.webp",
+    width: 1000,
+    height: 1363,
+  },
+];
 ---
 
 <article
@@ -9,22 +40,25 @@ const GALLERY_IMAGES = [];
   id="gallery"
 >
   {
-    Array.from({ length: 6 }).map((_, i) => (
+    GALLERY_IMAGES.map((_, i) => (
       <a
         class="group rounded-xl hover:scale-105 transition-transform relative"
-        href={`/images/gallery/img-${i + 1}.webp`}
+        href={GALLERY_IMAGES[i].src}
         target="_blank"
+        data-pswp-width={GALLERY_IMAGES[i].width}
+        data-pswp-height={GALLERY_IMAGES[i].height}
+        data-cropped="true"
       >
-        <img
-          class="blur-lg absolute inset-0 transition group-hover:contrast-150 opacity-70 -z-10 rounded-xl aspect-3/4 object-cover"
-          loading="lazy"
-          src={`/images/gallery/img-${i + 1}.webp`}
-          alt="Image"
-        />
         <img
           class="rounded-xl aspect-3/4 object-cover"
           loading="lazy"
-          src={`/images/gallery/img-${i + 1}.webp`}
+          src={GALLERY_IMAGES[i].src}
+          alt="Image"
+        />
+        <img
+          class="blur-lg absolute inset-0 transition group-hover:contrast-150 opacity-70 -z-10 rounded-xl aspect-3/4 object-cover"
+          loading="lazy"
+          src={GALLERY_IMAGES[i].src}
           alt="Image"
         />
       </a>
