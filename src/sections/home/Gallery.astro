@@ -5,18 +5,24 @@ const GALLERY_IMAGES = [];
 ---
 
 <article
-  class="grid sm:grid-cols-2 md:grid-cols-3 w-full max-w-screen-lg mx-auto gap-6 py-20 px-4"
+  class="grid sm:grid-cols-2 md:grid-cols-3 w-full max-w-screen-lg mx-auto gap-4 sm:gap-6 md:gap-8 py-20 px-4"
   id="gallery"
 >
   {
     Array.from({ length: 6 }).map((_, i) => (
       <a
-        class="rounded-xl shadow-2xl shadow-black/10 hover:shadow-2xl hover:shadow-black/75 hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+        class="group rounded-xl hover:scale-105 transition-transform relative"
         href={`/images/gallery/img-${i + 1}.webp`}
         target="_blank"
       >
         <img
-          class="aspect-3/4 object-cover w-full"
+          class="blur-lg absolute inset-0 transition group-hover:contrast-150 opacity-70 -z-10 rounded-xl aspect-3/4 object-cover"
+          loading="lazy"
+          src={`/images/gallery/img-${i + 1}.webp`}
+          alt="Image"
+        />
+        <img
+          class="rounded-xl aspect-3/4 object-cover"
           loading="lazy"
           src={`/images/gallery/img-${i + 1}.webp`}
           alt="Image"
