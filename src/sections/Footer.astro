@@ -1,0 +1,39 @@
+---
+import Facebook from "@/components/icons/Facebook.astro";
+import Instagram from "@/components/icons/Instagram.astro";
+---
+
+<footer
+  class="w-full max-w-screen-lg p-4 mx-auto border-gray-300 border-t-2 flex flex-col md:flex-row justify-center md:items-center md:justify-between gap-y-4"
+>
+  <span class="text-sm text-gray-800">
+    &copy; 2024 Nombre del restaurante <span
+      aria-hidden
+      class="hidden md:inline-block">|</span
+    >
+    <br aria-hidden class="block md:hidden" /> Todos los derechos reservados
+  </span>
+
+  <ul class="list-none flex gap-4">
+    <li>
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:scale-125 hover:opacity-90 transition-all duration-200 inline-block"
+      >
+        <Facebook />
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:scale-125 hover:opacity-90 transition-all duration-200 inline-block"
+      >
+        <Instagram />
+      </a>
+    </li>
+  </ul>
+</footer>
