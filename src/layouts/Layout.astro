@@ -30,7 +30,6 @@ const { title, description } = Astro.props;
       box-shadow:
         0 5px 50px -5px rgb(0 0 0 / 30%),
         0 0 0 1px rgb(0 0 0 / 30%);
-      text-shadow: none;
       background-color: #fff;
       color: #000;
       backdrop-filter: blur(10px);
@@ -44,9 +43,12 @@ const { title, description } = Astro.props;
   }
 
   #header-nav {
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
     animation: blur linear both;
     animation-timeline: scroll();
     animation-range: 0 200px;
+  }
+
+  .text-shadow {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   }
 </style>
