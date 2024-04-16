@@ -1,0 +1,31 @@
+---
+import Download from "@/components/icons/Download.astro";
+---
+
+<article
+  class="flex flex-col justify-center items-center bg-cover bg-center h-[80vh] bg-black text-white relative overflow-hidden"
+>
+  <img
+    class="w-full h-full object-cover object-center filter brightness-50 animate-fade-in select-none"
+    src="https://source.unsplash.com/1600x900/?restaurant"
+    alt="Nombre del restaurante"
+  />
+  <section
+    class="absolute flex flex-col justify-center w-full max-w-screen-lg p-4 animate-fade-in"
+    style="text-shadow: 0 0 10px rgba(0, 0, 0, 0.8)"
+  >
+    <h1 class="text-4xl font-bold sm:text-5xl lg:text-6xl">
+      Nombre del restaurante
+    </h1>
+    <p class="text-lg sm:text-xl lg:text-2xl">
+      Descripción o eslogan del restaurante
+    </p>
+    <a
+      class="mt-4 w-fit bg-white text-black py-2 px-4 rounded-md flex items-center hover:bg-gray-300 transition-colors duration-200"
+      href="#"
+    >
+      <Download class="w-6 h-6 inline-block mr-2" />
+      Descargar menú
+    </a>
+  </section>
+</article>
