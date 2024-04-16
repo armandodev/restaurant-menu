@@ -1,13 +1,15 @@
 ---
 import Facebook from "@/components/icons/Facebook.astro";
 import Instagram from "@/components/icons/Instagram.astro";
+
+const year = new Date().getFullYear();
 ---
 
 <footer
   class="w-full max-w-screen-lg p-4 mx-auto border-gray-300 border-t-2 flex flex-col md:flex-row justify-center md:items-center md:justify-between gap-y-4"
 >
   <span class="text-sm text-gray-800">
-    &copy; 2024 Nombre del restaurante <span
+    &copy; {year} Nombre del restaurante <span
       aria-hidden
       class="hidden md:inline-block">|</span
     >
