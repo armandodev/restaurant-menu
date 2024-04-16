@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
 import Hero from "@/sections/home/Hero.astro";
 import Footer from "@/sections/Footer.astro";
 ---
@@ -8,6 +9,8 @@ import Footer from "@/sections/Footer.astro";
   title="Nombre del restaurante | Eslogan"
   description="Descripción del restaurante"
 >
+  <Header transparent />
+
   <main>
     <Hero />
   </main>

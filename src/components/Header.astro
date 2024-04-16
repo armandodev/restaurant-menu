@@ -1,0 +1,60 @@
+---
+import Hamburger from "@/components/icons/Hamburger.astro";
+import Close from "@/components/icons/Close.astro";
+
+interface Props {
+  transparent?: boolean;
+}
+
+const { transparent = false } = Astro.props;
+---
+
+<header
+  id="header-nav"
+  class={`flex items-center justify-center fixed top-0 w-full px-6 py-4 z-50 h-20 text-white ${!transparent && "bg-white text-black"}`}
+>
+  <div
+    class="w-full max-w-7xl mx-auto flex items-center justify-between gap-16"
+  >
+    <a href="/" class="text-2xl font-bold">Logo</a>
+    <nav
+      id="header-menu"
+      class="fixed w-full h-dvh inset-0 bg-white text-black text-2xl flex flex-col items-center justify-center gap-4 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:w-[initial] md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial] md:overflow-y-[initial]"
+    >
+      <a
+        href="/"
+        class="hover:text-gray-700 transition-colors duration-200 ease-in-out"
+      >
+        Inicio
+      </a>
+      <a
+        href="/contact"
+        class="hover:text-gray-700 transition-colors duration-200 ease-in-out"
+      >
+        Contacto
+      </a>
+      <a
+        href="/about"
+        class="hover:text-gray-700 transition-colors duration-200 ease-in-out"
+      >
+        Nosotros
+      </a>
+      <a
+        class="hover:text-gray-700 transition-colors duration-200 ease-in-out"
+        href="/book"
+      >
+        Reservar
+      </a>
+      <a
+        href="/rate"
+        class="hover:text-gray-700 transition-colors duration-200 ease-in-out"
+      >
+        Deja tu reseña
+      </a>
+      <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+        <Close />
+      </a>
+    </nav>
+    <a href="#header-menu" class="md:hidden"><Hamburger /></a>
+  </div>
+</header>
