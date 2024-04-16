@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import "@fontsource-variable/onest";
 
 interface Props {
@@ -19,51 +20,51 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="canonical" content={Astro.url} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <slot />
-  </body>
-</html>
-<style is:global>
-  @keyframes header-blur {
-    to {
-      box-shadow:
-        0 5px 50px -5px rgb(0 0 0 / 30%),
-        0 0 0 1px rgb(0 0 0 / 30%);
-      background-color: #fff;
-      color: #000;
-      backdrop-filter: blur(10px);
+  </body><style is:global>
+    @keyframes header-blur {
+      to {
+        box-shadow:
+          0 5px 50px -5px rgb(0 0 0 / 30%),
+          0 0 0 1px rgb(0 0 0 / 30%);
+        background-color: #fff;
+        color: #000;
+        backdrop-filter: blur(10px);
+      }
     }
-  }
-  @keyframes nav-blur {
-    to {
-      text-shadow: none;
+    @keyframes nav-blur {
+      to {
+        text-shadow: none;
+      }
     }
-  }
 
-  html {
-    font-family: "Onest Variable", system-ui, sans-serif;
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
-  }
+    html {
+      font-family: "Onest Variable", system-ui, sans-serif;
+      scroll-behavior: smooth;
+      scrollbar-gutter: stable;
+    }
 
-  #top-header {
-    animation: header-blur linear both;
-  }
+    #top-header {
+      animation: header-blur linear both;
+    }
 
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+      #header-menu a {
+        animation: nav-blur linear both;
+      }
+    }
+
+    #top-header,
     #header-menu a {
-      animation: nav-blur linear both;
+      animation-timeline: scroll();
+      animation-range: 0 200px;
     }
-  }
 
-  #top-header,
-  #header-menu a {
-    animation-timeline: scroll();
-    animation-range: 0 200px;
-  }
-
-  .text-shadow {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  }
-</style>
+    .text-shadow {
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</html>
