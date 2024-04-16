@@ -1,11 +1,13 @@
 ---
 interface Props {
-  class?: string;
+  className?: string;
 }
+
+const { className = "w-6 h-6" } = Astro.props;
 ---
 
 <svg
-  class={`${Astro.props.class} h-6 w-6`}
+  class={className}
   xmlns="http://www.w3.org/2000/svg"
   xml:space="preserve"
   viewBox="0 0 470 470"
