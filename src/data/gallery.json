@@ -1,0 +1,32 @@
+[
+  {
+    "src": "/images/gallery/img-1.webp",
+    "width": 1000,
+    "height": 750
+  },
+  {
+    "src": "/images/gallery/img-2.webp",
+    "width": 1000,
+    "height": 1498
+  },
+  {
+    "src": "/images/gallery/img-3.webp",
+    "width": 1000,
+    "height": 667
+  },
+  {
+    "src": "/images/gallery/img-4.webp",
+    "width": 1000,
+    "height": 1250
+  },
+  {
+    "src": "/images/gallery/img-5.webp",
+    "width": 1000,
+    "height": 667
+  },
+  {
+    "src": "/images/gallery/img-6.webp",
+    "width": 1000,
+    "height": 1363
+  }
+]
