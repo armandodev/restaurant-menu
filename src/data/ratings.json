@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "title": "Excelente servicio",
+    "comment": "El personal fue muy atento y la comida estuvo deliciosa.",
+    "stars": 5
+  },
+  {
+    "id": 2,
+    "title": "Porciones generosas",
+    "comment": "Las porciones fueron abundantes y quedé satisfecho con la cantidad.",
+    "stars": 4
+  },
+  {
+    "id": 3,
+    "title": "Ambiente agradable",
+    "comment": "El ambiente del restaurante era acogedor y relajado.",
+    "stars": 4
+  },
+  {
+    "id": 4,
+    "title": "Precios razonables",
+    "comment": "Los precios eran justos y acordes a la calidad de la comida.",
+    "stars": 4
+  },
+  {
+    "id": 5,
+    "title": "Cocina excepcional",
+    "comment": "Los platos estaban preparados con mucha atención al detalle y sabor.",
+    "stars": 5
+  },
+  {
+    "id": 6,
+    "title": "Excelente ubicación",
+    "comment": "El restaurante está ubicado en una zona céntrica y de fácil acceso.",
+    "stars": 5
+  },
+  {
+    "id": 7,
+    "title": "Amplia carta de vinos",
+    "comment": "La selección de vinos es excelente y complementa muy bien la comida.",
+    "stars": 4
+  },
+  {
+    "id": 8,
+    "title": "Ambiente relajado",
+    "comment": "El ambiente en el restaurante es tranquilo y perfecto para disfrutar.",
+    "stars": 4
+  },
+  {
+    "id": 9,
+    "title": "Comida de calidad",
+    "comment": "Los ingredientes utilizados son frescos y de muy buena calidad.",
+    "stars": 5
+  },
+  {
+    "id": 10,
+    "title": "Excelente presentación",
+    "comment": "Los platos son presentados de manera cuidadosa y atractiva.",
+    "stars": 4
+  },
+  {
+    "id": 11,
+    "title": "Servicio eficiente",
+    "comment": "El personal es atento y responde rápidamente a las necesidades.",
+    "stars": 4
+  },
+  {
+    "id": 12,
+    "title": "Excelente relación",
+    "comment": "La calidad de la comida y el servicio se corresponden con los precios.",
+    "stars": 5
+  },
+  {
+    "id": 13,
+    "title": "Perfecta combinación",
+    "comment": "Los sabores se complementan de manera exquisita en los platos.",
+    "stars": 5
+  },
+  {
+    "id": 14,
+    "title": "Ambiente elegante",
+    "comment": "El restaurante tiene un ambiente elegante y refinado.",
+    "stars": 4
+  },
+  {
+    "id": 15,
+    "title": "Excelente sazón",
+    "comment": "Los platos están preparados con mucha dedicación y sazón.",
+    "stars": 5
+  },
+  {
+    "id": 16,
+    "title": "Amplia variedad",
+    "comment": "La carta ofrece una gran variedad de opciones para todos los gustos.",
+    "stars": 4
+  },
+  {
+    "id": 17,
+    "title": "Excelente cocina",
+    "comment": "Los platos están preparados con mucha habilidad y creatividad.",
+    "stars": 5
+  },
+  {
+    "id": 18,
+    "title": "Buen servicio",
+    "comment": "El personal es atento y se preocupa por la satisfacción de los clientes.",
+    "stars": 4
+  },
+  {
+    "id": 19,
+    "title": "Ambiente cálido",
+    "comment": "El restaurante tiene un ambiente acogedor y familiar.",
+    "stars": 4
+  },
+  {
+    "id": 20,
+    "title": "Comida deliciosa",
+    "comment": "Los platos están preparados con ingredientes frescos y de calidad.",
+    "stars": 5
+  },
+  {
+    "id": 21,
+    "title": "Excelente atención",
+    "comment": "El personal es muy atento y se esfuerza por satisfacer a los clientes.",
+    "stars": 5
+  },
+  {
+    "id": 22,
+    "title": "Ambiente agradable",
+    "comment": "El restaurante tiene un ambiente relajado y apropiado para disfrutar.",
+    "stars": 4
+  },
+  {
+    "id": 23,
+    "title": "Comida auténtica",
+    "comment": "Los platos son preparados de manera tradicional y con sabores auténticos.",
+    "stars": 5
+  },
+  {
+    "id": 24,
+    "title": "Excelente ubicación",
+    "comment": "El restaurante está ubicado en una zona privilegiada y de fácil acceso.",
+    "stars": 4
+  },
+  {
+    "id": 25,
+    "title": "Comida de primera",
+    "comment": "La calidad de la comida es excepcional y supera las expectativas.",
+    "stars": 5
+  },
+  {
+    "id": 26,
+    "title": "Servicio impecable",
+    "comment": "El personal es muy profesional y se encarga de atender a los clientes.",
+    "stars": 5
+  },
+  {
+    "id": 27,
+    "title": "Ambiente relajado",
+    "comment": "El restaurante tiene un ambiente tranquilo y perfecto para disfrutar.",
+    "stars": 4
+  },
+  {
+    "id": 28,
+    "title": "Excelente presentación",
+    "comment": "Los platos son presentados de manera cuidadosa y con mucho estilo.",
+    "stars": 5
+  },
+  {
+    "id": 29,
+    "title": "Comida de calidad",
+    "comment": "Los ingredientes utilizados son frescos y de alta calidad.",
+    "stars": 5
+  },
+  {
+    "id": 30,
+    "title": "Ambiente elegante",
+    "comment": "El restaurante tiene un ambiente elegante y refinado que lo hace especial.",
+    "stars": 4
+  },
+  {
+    "id": 31,
+    "title": "Servicio excepcional",
+    "comment": "El personal es muy amable y se encarga de atender a los clientes de manera eficiente.",
+    "stars": 5
+  },
+  {
+    "id": 32,
+    "title": "Excelente sazón",
+    "comment": "Los platos están preparados con mucha dedicación y una sazón exquisita.",
+    "stars": 5
+  },
+  {
+    "id": 33,
+    "title": "Variedad de opciones",
+    "comment": "La carta ofrece una amplia variedad de platos para complacer a todos los paladares.",
+    "stars": 4
+  },
+  {
+    "id": 34,
+    "title": "Ambiente acogedor",
+    "comment": "El restaurante tiene un ambiente cálido y agradable que invita a disfrutar.",
+    "stars": 4
+  },
+  {
+    "id": 35,
+    "title": "Comida espectacular",
+    "comment": "Los platos son preparados con mucha habilidad y tienen un sabor excepcional.",
+    "stars": 5
+  },
+  {
+    "id": 36,
+    "title": "Excelente atención",
+    "comment": "El personal es muy atento y se preocupa por la satisfacción de los clientes.",
+    "stars": 5
+  },
+  {
+    "id": 37,
+    "title": "Ambiente encantador",
+    "comment": "El restaurante tiene un ambiente único y encantador que lo hace especial.",
+    "stars": 4
+  },
+  {
+    "id": 38,
+    "title": "Comida auténtica",
+    "comment": "Los platos están preparados con recetas tradicionales y sabores auténticos.",
+    "stars": 5
+  },
+  {
+    "id": 39,
+    "title": "Excelente ubicación",
+    "comment": "El restaurante está ubicado en una zona privilegiada y de fácil acceso.",
+    "stars": 4
+  },
+  {
+    "id": 40,
+    "title": "Comida de lujo",
+    "comment": "La calidad de los platos es excepcional y supera todas las expectativas.",
+    "stars": 5
+  },
+  {
+    "id": 41,
+    "title": "Servicio impecable",
+    "comment": "El personal es muy profesional y atiende a los clientes con gran esmero.",
+    "stars": 5
+  },
+  {
+    "id": 42,
+    "title": "Ambiente tranquilo",
+    "comment": "El restaurante tiene un ambiente relajado y apropiado para disfrutar.",
+    "stars": 4
+  },
+  {
+    "id": 43,
+    "title": "Excelente presentación",
+    "comment": "Los platos son presentados de una manera muy cuidadosa y con mucho estilo.",
+    "stars": 5
+  },
+  {
+    "id": 44,
+    "title": "Comida de primera",
+    "comment": "Los ingredientes utilizados son de la mejor calidad y muy frescos.",
+    "stars": 5
+  },
+  {
+    "id": 45,
+    "title": "Ambiente acogedor",
+    "comment": "El restaurante tiene un ambiente cálido y agradable que te hace sentir en casa.",
+    "stars": 4
+  },
+  {
+    "id": 46,
+    "title": "Servicio excepcional",
+    "comment": "El personal es muy atento y se esfuerza por cumplir con las expectativas de los clientes.",
+    "stars": 5
+  },
+  {
+    "id": 47,
+    "title": "Excelente sazón",
+    "comment": "Los platos tienen una sazón perfecta que realza todos los sabores.",
+    "stars": 5
+  },
+  {
+    "id": 48,
+    "title": "Amplia variedad",
+    "comment": "La carta ofrece una gran variedad de platos para satisfacer a todos los comensales.",
+    "stars": 4
+  },
+  {
+    "id": 49,
+    "title": "Ambiente encantador",
+    "comment": "El restaurante tiene un ambiente único y encantador que hace que la experiencia sea memorable.",
+    "stars": 4
+  },
+  {
+    "id": 50,
+    "title": "Comida espectacular",
+    "comment": "Los platos son preparados con mucha habilidad y tienen un sabor excepcional que cautiva el paladar.",
+    "stars": 5
+  }
+]
