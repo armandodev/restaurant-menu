@@ -5,7 +5,6 @@ import RATINGS from "@/data/ratings.json";
 const TOTAL_RATINGS = RATINGS.length;
 const AVERAGE_RATING =
   RATINGS.reduce((acc, rating) => acc + rating.stars, 0) / TOTAL_RATINGS;
-
 const BEST_10_RATINGS = RATINGS.sort((a, b) => b.stars - a.stars).slice(0, 10);
 ---
 
@@ -26,7 +25,7 @@ const BEST_10_RATINGS = RATINGS.sort((a, b) => b.stars - a.stars).slice(0, 10);
       class="bg-blue-500 text-white px-4 py-2 rounded-md text-center hover:bg-blue-600 transition-colors duration-300"
       href="/rate"
     >
-      Deja tu comentario
+      Deja tu reseña
     </a>
   </section>
 
