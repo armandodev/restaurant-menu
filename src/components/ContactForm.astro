@@ -1,0 +1,60 @@
+<form class="grid gap-4 sm:text-lg" action="" method="POST">
+  <h2 class="text-3xl font-bold text-gray-900">Contáctanos</h2>
+  <fieldset class="grid sm:grid-cols-2 gap-4">
+    <legend class="hidden">Información personal</legend>
+
+    <label>
+      Primer nombre:
+      <input
+        class="w-full p-2 border border-gray-300 rounded"
+        type="text"
+        name="first_name"
+        required
+      />
+    </label>
+
+    <label>
+      Apellido:
+      <input
+        class="w-full p-2 border border-gray-300 rounded"
+        type="text"
+        name="last_name"
+        required
+      />
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend class="hidden">Información de contacto</legend>
+
+    <label>
+      Correo electrónico:
+      <input
+        class="w-full p-2 border border-gray-300 rounded"
+        type="email"
+        name="email"
+        required
+      />
+    </label>
+  </fieldset>
+
+  <fieldset class="grid">
+    <legend class="hidden">Mensaje</legend>
+
+    <label>
+      Mensaje:
+      <textarea
+        class="w-full p-2 border border-gray-300 rounded resize-none"
+        name="message"
+        rows="4"
+        maxlength="500"
+        required></textarea>
+    </label>
+  </fieldset>
+
+  <input
+    class="p-2 bg-blue-500 text-white rounded"
+    type="submit"
+    value="Enviar"
+  />
+</form>
