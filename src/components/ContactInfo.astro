@@ -1,22 +1,48 @@
-<div class="flex flex-col justify-between gap-4 sm:text-lg">
-  <h2 class="text-4xl font-bold text-gray-900">Contacto</h2>
-  <p>
-    <strong class="text-gray-800">Email:</strong>
-    <a href="mailto:ejemplo@dominio.com"> ejemplo@dominio.com </a>
-  </p>
-  <p>
-    <strong class="text-gray-800">Teléfono:</strong>
-    <a href="tel:+1234567890">+123 456 7890</a>
-  </p>
-  <p>
-    <span>
+---
+import ContactForm from "@/components/ContactForm.astro";
+---
+
+<article
+  class="max-w-screen-lg min-h-screen mx-auto px-4 py-8 flex items-center justify-center flex-col gap-8"
+>
+  <section class="flex flex-col items-center justify-center w-full">
+    <h1 class="text-3xl font-bold text-gray-800">Contactanos</h1>
+    <p class="text-gray-600">
+      Si tienes alguna duda o comentario, no dudes en contactarnos.
+    </p>
+  </section>
+  <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full h-fit">
+    <ContactForm />
+
+    <img
+      src="/images/gallery/img-3.webp"
+      alt="Reservaciones"
+      class="hidden sm:block w-full h-full object-cover object-center rounded-lg"
+    />
+  </section>
+  <section class="w-full flex flex-col items-center justify-center gap-4">
+    <p class="text-gray-600 flex flex-wrap items-center justify-center gap-4">
+      <span>
+        <strong class="text-gray-800">Email:</strong>
+        <a href="mailto:ejemplo@dominio.com"> ejemplo@dominio.com </a>
+      </span>
+      <span>
+        <strong class="text-gray-800">Teléfono:</strong>
+        <a href="tel:+1234567890">+123 456 7890</a>
+      </span>
+    </p>
+
+    <address
+      class="text-gray-600 flex flex-wrap items-center justify-center gap-4"
+    >
       <strong class="text-gray-800">Dirección:</strong>
-      Calle 123, Colonia Ejemplo, Ciudad de Ejemplo, Estado de Ejemplo, C.P. 12345
-    </span>
-  </p>
-  <iframe
-    class="w-full h-40 animate-fade-in animate-delay-200"
-    title="Mapa de ubicación de la empresa"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.292292292292!2d-99.1333666851087!3d19.43260778689268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6d7f1e4b0b%3A0x3e1b4b4f1b4b1b1d!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1629780000000!5m2!1ses-419!2smx"
-    loading="lazy"></iframe>
-</div>
+      <span>Calle Falsa 123, Colonia Falsa, Ciudad Falsa, CP 12345</span>
+    </address>
+
+    <iframe
+      class="w-full h-96"
+      title="Mapa de ubicación de la empresa"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.292292292292!2d-99.1333666851087!3d19.43260778689268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6d7f1e4b0b%3A0x3e1b4b4f1b4b1b1d!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1629780000000!5m2!1ses-419!2smx"
+      loading="lazy"></iframe>
+  </section>
+</article>

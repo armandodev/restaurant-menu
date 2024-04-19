@@ -1,60 +1,78 @@
-<form class="grid gap-4 sm:text-lg" action="" method="POST">
-  <h2 class="text-3xl font-bold text-gray-900">Contáctanos</h2>
-  <fieldset class="grid sm:grid-cols-2 gap-4">
-    <legend class="hidden">Información personal</legend>
+<form class="w-full flex flex-col gap-4" action="#" method="POST">
+  <fieldset class="grid grid-cols-1 gap-4 sm:grid-cols-2 items-center">
+    <legend class="text-xl font-bold text-gray-800 col-span-1 sm:col-span-2">
+      Datos Personales
+    </legend>
 
-    <label>
-      Primer nombre:
+    <label class="text-sm text-gray-600">
+      <span>Nombre</span>
       <input
-        class="w-full p-2 border border-gray-300 rounded"
         type="text"
-        name="first_name"
+        name="name"
+        id="name"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="John"
         required
       />
     </label>
 
-    <label>
-      Apellido:
+    <label class="text-sm text-gray-600">
+      <span>Apellido</span>
       <input
-        class="w-full p-2 border border-gray-300 rounded"
         type="text"
-        name="last_name"
+        name="lastname"
+        id="lastname"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="Doe"
         required
       />
     </label>
   </fieldset>
 
   <fieldset>
-    <legend class="hidden">Información de contacto</legend>
+    <legend class="text-xl font-bold text-gray-800">Datos de Contacto</legend>
 
-    <label>
-      Correo electrónico:
+    <label class="text-sm text-gray-600">
+      <span>Correo Electrónico</span>
       <input
-        class="w-full p-2 border border-gray-300 rounded"
         type="email"
         name="email"
+        id="email"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="johndoe@gmail.com"
         required
       />
     </label>
   </fieldset>
 
-  <fieldset class="grid">
-    <legend class="hidden">Mensaje</legend>
+  <fieldset>
+    <legend class="text-xl font-bold text-gray-800">Correo</legend>
 
-    <label>
-      Mensaje:
+    <label class="text-sm text-gray-600">
+      <span>Asunto</span>
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="Asunto del correo"
+        required
+      />
+    </label>
+
+    <label class="text-sm text-gray-600">
+      <span>Mensaje</span>
       <textarea
-        class="w-full p-2 border border-gray-300 rounded resize-none"
-        name="message"
+        name="comments"
+        id="comments"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2 resize-none"
         rows="4"
-        maxlength="500"
-        required></textarea>
+        placeholder="Escribe tu mensaje aqui"></textarea>
     </label>
   </fieldset>
-
   <input
-    class="p-2 bg-blue-500 text-white rounded"
     type="submit"
+    class="w-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg cursor-pointer transition-colors duration-300 ease-in-out"
     value="Enviar"
   />
 </form>
