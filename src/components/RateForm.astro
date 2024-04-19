@@ -1,0 +1,53 @@
+<!-- Formulario (componente de astro) para dejar una reseña sobre el restaurante estilado con css -->
+<form class="w-full flex flex-col gap-4" action="#" method="POST">
+  <hr class="border border-gray-300" />
+
+  <fieldset class="rating rating-md">
+    <legend class="text-xl font-bold text-gray-800">Calificación</legend>
+
+    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
+    <input
+      type="radio"
+      name="rating"
+      class="mask mask-star-2 bg-orange-400"
+      checked
+    />
+  </fieldset>
+
+  <hr class="border border-gray-300" />
+
+  <fieldset class="flex flex-col gap-4">
+    <legend class="text-xl font-bold text-gray-800">Deja tu reseña</legend>
+
+    <label class="text-sm text-gray-600">
+      <span>Describe tu experiencia de manera breve</span>
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="Comida deliciosa, excelente servicio, etc."
+        required
+      />
+    </label>
+
+    <label class="text-sm text-gray-600">
+      <span>Mensaje</span>
+      <textarea
+        name="comments"
+        id="comments"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2 resize-none"
+        rows="4"
+        placeholder="Escribe tu mensaje aqui"></textarea>
+    </label>
+  </fieldset>
+
+  <input
+    type="submit"
+    class="w-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg cursor-pointer transition-colors duration-300 ease-in-out"
+    value="Dejar reseña"
+  />
+</form>

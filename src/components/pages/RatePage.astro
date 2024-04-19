@@ -1,22 +1,18 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
-import Form from "@/sections/rate/Form.astro";
+import RateInfo from "@/components/RateInfo.astro";
 import Footer from "@/sections/Footer.astro";
 ---
 
 <Layout
-  title="Deja tu reseña | Nombre del restaurante"
-  description="Deja tu reseña en Nombre del restaurante y comparte tu experiencia con otros comensales."
+  title="Contacto | Nombre del restaurante"
+  description="Descripción del restaurante"
 >
   <Header />
 
-  <main
-    class="max-w-screen-lg min-h-screen mx-auto px-4 py-8 flex items-center justify-center flex-col"
-  >
-    <h1 class="text-3xl font-bold text-center mb-4">Deja tu reseña</h1>
-
-    <Form />
+  <main class="mt-20">
+    <RateInfo />
   </main>
 
   <Footer />
