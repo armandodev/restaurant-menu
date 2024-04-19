@@ -1,0 +1,116 @@
+<form class="w-full flex flex-col gap-4" action="#" method="POST">
+  <fieldset class="grid grid-cols-1 gap-4 sm:grid-cols-2 items-center">
+    <legend class="text-xl font-bold text-gray-800 col-span-1 sm:col-span-2">
+      Datos Personales
+    </legend>
+
+    <label class="text-sm text-gray-600">
+      <span>Nombre</span>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="John"
+        required
+      />
+    </label>
+
+    <label class="text-sm text-gray-600">
+      <span>Apellido</span>
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="Doe"
+        required
+      />
+    </label>
+  </fieldset>
+
+  <fieldset class="grid grid-cols-1 gap-4 sm:grid-cols-2 items-center">
+    <legend class="text-xl font-bold text-gray-800">Datos de Contacto</legend>
+
+    <label class="text-sm text-gray-600">
+      <span>Correo Electrónico</span>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="johndoe@gmail.com"
+        required
+      />
+    </label>
+
+    <label class="text-sm text-gray-600">
+      <span>Teléfono</span>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="1234567890"
+        required
+      />
+    </label>
+  </fieldset>
+  <fieldset class="grid grid-cols-1 gap-4 sm:grid-cols-2 items-center">
+    <legend class="text-xl font-bold text-gray-800">Fecha y Hora</legend>
+
+    <label class="text-sm text-gray-600">
+      <span>Fecha</span>
+      <input
+        type="date"
+        name="date"
+        id="date"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        required
+      />
+    </label>
+    <label class="text-sm text-gray-600">
+      <span>Hora</span>
+      <input
+        type="time"
+        name="time"
+        id="time"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        required
+      />
+    </label>
+  </fieldset>
+  <fieldset class="grid grid-cols-1 gap-4 items-center">
+    <legend class="text-xl font-bold text-gray-800">
+      Detalles de la Reservación
+    </legend>
+
+    <label class="text-sm text-gray-600">
+      <span>Número de Personas</span>
+      <input
+        type="number"
+        name="people"
+        id="people"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2"
+        placeholder="4"
+        min="1"
+        required
+      />
+    </label>
+
+    <label class="text-sm text-gray-600">
+      <span>Detalles adicionales</span>
+      <textarea
+        name="comments"
+        id="comments"
+        class="w-full border border-gray-300 rounded-lg px-3 py-2 resize-none"
+        rows="4"
+        placeholder="Algo que debamos saber"></textarea>
+    </label>
+  </fieldset>
+  <input
+    type="submit"
+    class="w-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg cursor-pointer transition-colors duration-300 ease-in-out"
+    value="Solicitar Reservación"
+  />
+</form>
